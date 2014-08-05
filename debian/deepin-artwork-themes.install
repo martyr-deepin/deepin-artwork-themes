@@ -1,0 +1,4 @@
+#deepin-themes/* /usr/share/deepin-personalization/
+preview/* /usr/share/personalization/preview/
+thumbnail/* /usr/share/personalization/thumbnail/
+themes/* /usr/share/personalization/themes/

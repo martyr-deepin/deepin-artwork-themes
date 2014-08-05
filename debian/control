@@ -1,0 +1,12 @@
+Source: deepin-artwork-themes
+Section: deepin
+Priority: optional
+Maintainer: leaeasy <leaeasy@gmail.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 8),
+
+Package: deepin-artwork-themes
+Architecture: all
+Depends: deepin-icon-theme, deepin-icon-theme-v2013
+Description: Deepin artwork themes
+ This package is Deepin artwork themes.
