@@ -2,8 +2,8 @@ Source: deepin-artwork-themes
 Section: deepin
 Priority: optional
 Maintainer: leaeasy <leaeasy@gmail.com>
-Standards-Version: 3.9.2
-Build-Depends: debhelper (>= 8),
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 8), python
 
 Package: deepin-artwork-themes
 Architecture: all
