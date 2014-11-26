@@ -27,6 +27,11 @@ def touch_file_dir(filepath):
     if not os.path.exists(d):
         os.makedirs(d)
 
+def convert_filename(theme_dir, theme, oldfile, type):
+    newfile = os.path.join(type, theme_dir, theme+"-"+type+".png")
+    touch_file_dir(newfile)
+    os.system("cp %s %s" % (oldfile, newfile))
+
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
 DIRS = ["CursorThemes", "IconThemes", "WindowThemes"]
@@ -38,15 +43,7 @@ for theme_dir_name in DIRS:
     for theme in themes:
         old_preview_png = os.path.join(old_theme_dir, theme, "preview.png")
         old_thumbnail_png = os.path.join(old_theme_dir, theme, "thumbnail.png")
-        if not os.path.exists(old_preview_png):
-            print "components/%s/%s/preview.png: 缺少预览图" % (theme_dir_name, theme)
-        if not os.path.exists(old_thumbnail_png):
-            print "components/%s/%s/thumbnail.png: 缺少缩略图" % (theme_dir_name, theme)
-
-        if os.path.exists(old_preview_png) and os.path.exists(old_thumbnail_png):
-            new_preview_path = os.path.join("preview", theme_dir_name, theme+ "-preview.png")
-            new_thumbnail_path = os.path.join("thumbnail", theme_dir_name, theme+ "-thumbnail.png")
-            touch_file_dir(new_preview_path)
-            os.system("cp %s %s" % (old_preview_png, new_preview_path))
-            touch_file_dir(new_thumbnail_path)
-            os.system("cp %s %s" % (old_thumbnail_png, new_thumbnail_path))
+        if os.path.exists(old_preview_png):
+            convert_filename(theme_dir_name, theme, old_preview_png, "preview")
+        if os.path.exists(old_thumbnail_png):
+            convert_filename(theme_dir_name, theme, old_thumbnail_png, "thumbnail")
