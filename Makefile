@@ -3,7 +3,7 @@ PREFIX= /usr
 all: build
 
 build: 
-	python convert.py
+	python2 convert.py
 
 install:
 	mkdir -pv  $(DESTDIR)$(PREFIX)/share/personalization/preview
