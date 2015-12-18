@@ -34,7 +34,7 @@ def convert_filename(theme_dir, theme, oldfile, type):
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
-DIRS = ["CursorThemes", "IconThemes", "WindowThemes"]
+DIRS = ["IconThemes", "WindowThemes"]
 
 for theme_dir_name in DIRS:
     old_theme_dir = os.path.join(current_dir, "components", theme_dir_name)
