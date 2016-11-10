@@ -1,0 +1,53 @@
+deepin-artwork-themes (15.12.3) stable; urgency=low
+
+  * Autobuild Tag 15.12.3 
+
+ -- TagBuilder <tagbuilder@linuxdeepin.com>  Mon, 23 May 2016 12:48:04 +0000
+
+deepin-artwork-themes (15.12.2-3) stable; urgency=low
+
+  * Rebuild Version 15.12.2 
+
+ -- TagBuilder <tabbuilder@linuxdeepin.com>  Fri, 18 Dec 2015 18:16:35 +0000
+
+deepin-artwork-themes (15.12.2-2) stable; urgency=low
+
+  * Rebuild Version 15.12.2 
+
+ -- TagBuilder <tabbuilder@linuxdeepin.com>  Fri, 18 Dec 2015 18:15:48 +0000
+
+deepin-artwork-themes (15.12.2-1) stable; urgency=low
+
+  * Autobuild Tag 15.12.2 
+
+ -- TagBuilder <tabbuilder@linuxdeepin.com>  Fri, 18 Dec 2015 18:15:37 +0000
+
+deepin-artwork-themes (15.10.2-2) stable; urgency=low
+
+  * Rebuild Version 15.10.2 
+
+ -- TagBuilder <tabbuilder@linuxdeepin.com>  Fri, 18 Dec 2015 18:04:36 +0000
+
+deepin-artwork-themes (15.10.2-1) stable; urgency=low
+
+  * Autobuild Tag 15.10.2 
+
+ -- TagBuilder <tabbuilder@linuxdeepin.com>  Wed, 09 Dec 2015 22:24:27 +0000
+
+deepin-artwork-themes (15.10.2) unstable; urgency=medium
+
+  * change cursor theme to dmz white. 
+
+ -- Deepin Packages Builder <packages@linuxdeepin.com>  Mon, 30 Nov 2015 11:17:58 +0800
+
+deepin-artwork-themes (15.10.1) unstable; urgency=medium
+
+  * update theme.ini. 
+
+ -- Deepin Packages Builder <packages@linuxdeepin.com>  Thu, 19 Nov 2015 12:27:39 +0800
+
+deepin-artwork-themes (15.10.0) unstable; urgency=medium
+
+  * Build from git 5bf78d7f429cec737e67f7faf2866c711960fe14
+
+ -- Deepin Packages Builder <packages@linuxdeepin.com>  Tue, 17 Nov 2015 19:54:22 +0800
