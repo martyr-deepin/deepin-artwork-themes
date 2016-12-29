@@ -34,16 +34,13 @@ def convert_filename(theme_dir, theme, oldfile, type):
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
 
-DIRS = ["IconThemes", "WindowThemes"]
+DIRS = ["WindowThemes"]
 
 for theme_dir_name in DIRS:
     old_theme_dir = os.path.join(current_dir, "components", theme_dir_name)
     themes = os.listdir(old_theme_dir)
     print "%s: %s" % (theme_dir_name, len(themes))
     for theme in themes:
-        old_preview_png = os.path.join(old_theme_dir, theme, "preview.png")
         old_thumbnail_png = os.path.join(old_theme_dir, theme, "thumbnail.png")
-        if os.path.exists(old_preview_png):
-            convert_filename(theme_dir_name, theme, old_preview_png, "preview")
         if os.path.exists(old_thumbnail_png):
             convert_filename(theme_dir_name, theme, old_thumbnail_png, "thumbnail")
